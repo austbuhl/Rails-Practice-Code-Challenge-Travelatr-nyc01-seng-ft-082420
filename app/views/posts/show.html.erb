@@ -1,2 +1,9 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<h1>Posts Show</h1>
+
+
+<h3>Title: <%= @post.title %></h3>
+<p>Content: <%= @post.content %></p>
+<p>Author: <%= link_to @post.blogger.name, blogger_path%></p>
+
+
+
