@@ -4,6 +4,9 @@
 <h3>Title: <%= @post.title %></h3>
 <p>Content: <%= @post.content %></p>
 <p>Author: <%= link_to @post.blogger.name, blogger_path%></p>
+<p>Destination: <%= link_to @post.destination.name, destination_path(@post.destination) %></p>
 
-
+<%= button_to "LIKE", post_path(@post), method: :patch %>
+# button to call update action from posts_controller (posts#update) and add one like
+# to the posts likes column
 

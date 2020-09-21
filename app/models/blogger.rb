@@ -7,4 +7,9 @@ class Blogger < ApplicationRecord
             p.likes 
         end
     end
+
+    def destination_count
+        self.destinations.sort_by { |destination| destination.count }
+    end
+
 end

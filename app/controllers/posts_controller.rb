@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 
   def create
     post = Post.create(post_params)
-    redirect_to post_path
+    redirect_to post_path(post)
   end
 
   def edit
@@ -20,7 +20,6 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    byebug
   end
 
   private
