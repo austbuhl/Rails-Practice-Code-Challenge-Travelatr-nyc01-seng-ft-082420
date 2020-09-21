@@ -44,3 +44,31 @@ Post:
 	- A link to the page of that post's author
 	- A link to the page of that post's destination
 	- A like button link that increases the like count for that post (should take the user to the same page)
+
+
+# TODO
+- Blogger will need :new, :show, :index
+	- Validations: Unique names, ages > 0, bio longer than 30 characters
+- Blogger Show Page
+	- total likes on all of their posts
+	- link_to bloggers featured post( most likes )
+	- BONUS: grab top 5 destinations (by post count)
+
+- Destination will need :show
+- Destination show page
+	- most recent 5 posts
+	- link_to featured post (most likes)
+	- AVG age of all unique bloggers that have written about this destination (avg age method in the destination model)
+
+- Post will :new, :create, :edit, :update, :show
+
+- Post New Page
+	- select a blogger from dropdown (collection_select)
+	- destination (another collection_select)
+	- Needs a title and content longer than 100 characters (validations)
+
+- Post Show Page
+	- title, content
+	- link_to author
+	- link_to destination
+	- like button link that increases the like count for that post
